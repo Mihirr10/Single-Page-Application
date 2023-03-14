@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Responsive Navbar</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+  </head>
+  <body>
+    <nav id="home">
+      <input type="checkbox" id="check">
+      <label for="check" class="checkbtn">
+        <i class="fas fa-bars"></i>
+      </label>
+      <label class="logo">Single Page Application</label>
+      <ul>
+        <li><a class="active" href="#home">Home</a></li>
+        <li><a href="#images">Images</a></li>
+        <li><a href="#container">Services</a></li>
+        <li><a href="#about-section">About Us</a></li> 
+      
+      </ul>
+    </nav>
+    <section></section>
+  
+    
+<div class="container" id="container">
+
+  <h1 class="heading">our services</h1>
+
+  <div class="box-container">
+
+      <div class="box">
+          <img src="image/icon-1.png" alt="">
+          <h3>HTML 5</h3>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus, commodi?</p>
+          <a href="#" class="btn">read more</a>
+      </div>
+
+      <div class="box">
+          <img src="image/icon-2.png" alt="">
+          <h3>CSS 3</h3>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus, commodi?</p>
+          <a href="#" class="btn">read more</a>
+      </div>
+
+      <div class="box">
+          <img src="image/icon-3.png" alt="">
+          <h3>JavaScript</h3>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus, commodi?</p>
+          <a href="#" class="btn">read more</a>
+      </div>
+
+      <div class="box">
+          <img src="image/icon-4.png" alt="">
+          <h3>SASS</h3>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus, commodi?</p>
+          <a href="#" class="btn">read more</a>
+      </div>
+
+      <div class="box">
+          <img src="image/icon-5.png" alt="">
+          <h3>JQuery</h3>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus, commodi?</p>
+          <a href="#" class="btn">read more</a>
+      </div>
+
+      <div class="box">
+          <img src="image/icon-6.png" alt="">
+          <h3>React.js</h3>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus, commodi?</p>
+          <a href="#" class="btn">read more</a>
+      </div>
+
+  </div>
+
+</div>
+
+<div class="content" id="images">
+  <div class="images">
+    <img id="img" src="bg1.jpeg">
+    <img id="img" src="bg2.jpg">
+    <img id="img"src="bg3.jpeg">
+    <img id="img"src="bg4.jpeg">
+    <img id="img"src="bg5.jpg">
+  </div>
+  <div class="btm-slides">
+    <span onclick="btm_slide(1)"></span>
+    <span onclick="btm_slide(2)"></span>
+    <span onclick="btm_slide(3)"></span>
+    <span onclick="btm_slide(4)"></span>
+    <span onclick="btm_slide(5)"></span>
+  </div>
+  <div class="sliders left" onclick="side_slide(-1)">
+    <span class="fas fa-angle-left"></span>
+  </div>
+  <div class="sliders right" onclick="side_slide(1)">
+    <span class="fas fa-angle-right"></span>
+  </div>
+</div>
+
+<script>
+  var indexValue = 1;
+  showImg(indexValue);
+  function btm_slide(e){showImg(indexValue = e);}
+  function side_slide(e){showImg(indexValue += e);}
+  function showImg(e){
+    var i;
+    const img = document.querySelectorAll('#img');
+    const slider = document.querySelectorAll('.btm-slides span');
+    if(e > img.length){indexValue = 1}
+    if(e < 1){indexValue = img.length}
+    for(i = 0; i < img.length; i++){
+      img[i].style.display = "none";
+    }
+    for(i = 0; i < slider.length; i++){
+      slider[i].style.background = "rgba(255,255,255,0.1)";
+    }
+    img[indexValue-1].style.display = "block";
+    slider[indexValue-1].style.background = "white";
+  }
+</script>
+
+<div class="about-section" id="about-section">
+  <div class="inner-container">
+      <h1>About Us</h1>
+      <p class="text">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus velit ducimus, enim inventore earum, eligendi nostrum pariatur necessitatibus eius dicta a voluptates sit deleniti autem error eos totam nisi neque voluptates sit deleniti autem error eos totam nisi neque.
+      </p>
+      <div class="skills">
+          <span>Web Design</span>
+          <span>Photoshop & Illustrator</span>
+          <span>Coding</span>
+      </div>
+  </div>
+</div>
+
+
+
+  </body>
+</html>
