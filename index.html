@@ -6,9 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" />
+
   </head>
   <body>
-    <nav id="home">
+    <nav>
       <input type="checkbox" id="check">
       <label for="check" class="checkbtn">
         <i class="fas fa-bars"></i>
@@ -16,21 +18,40 @@
       <label class="logo">Single Page Application</label>
       <ul>
         <li><a class="active" href="#home">Home</a></li>
-        <li><a href="#images">Images</a></li>
-        <li><a href="#container">Services</a></li>
-        <li><a href="#about-section">About Us</a></li> 
+        <li><a class="active" href="#images">Images</a></li>
+        <li><a class="active" href="#container">Services</a></li>
+        <li><a class="active" href="#about-section">About Us</a></li> 
       
       </ul>
     </nav>
-    <section></section>
+    <section  id="home"></section>
+
+    <div class="slider-container" id="images">
+      
+      <h1 style="text-align: center;">Image Slider</h1>
+      <div class="slide">
+          <img src="./1.jpeg">
+      </div>
+      <div class="slide">
+          <img src="./2.avif">
+      </div>
+      <div class="slide">
+          <img src="./3.avif">
+      </div>
+      <div class="slide">
+          <img src="./2.avif">
+      </div>
+      <span class="arrow prev" onclick="controller(-1)">&#10094;</span>
+      <span class="arrow next" onclick="controller(1)">&#10095;</span>
+    </div>
   
     
 <div class="container" id="container">
 
-  <h1 class="heading">our services</h1>
+  <h1 class="heading" style="padding-top: 80px;">our services</h1>
 
   <div class="box-container">
-
+    
       <div class="box">
           <img src="image/icon-1.png" alt="">
           <h3>HTML 5</h3>
@@ -74,53 +95,12 @@
       </div>
 
   </div>
-
+<br>
+<br>
 </div>
 
-<div class="content" id="images">
-  <div class="images">
-    <img id="img" src="bg1.jpeg">
-    <img id="img" src="bg2.jpg">
-    <img id="img"src="bg3.jpeg">
-    <img id="img"src="bg4.jpeg">
-    <img id="img"src="bg5.jpg">
-  </div>
-  <div class="btm-slides">
-    <span onclick="btm_slide(1)"></span>
-    <span onclick="btm_slide(2)"></span>
-    <span onclick="btm_slide(3)"></span>
-    <span onclick="btm_slide(4)"></span>
-    <span onclick="btm_slide(5)"></span>
-  </div>
-  <div class="sliders left" onclick="side_slide(-1)">
-    <span class="fas fa-angle-left"></span>
-  </div>
-  <div class="sliders right" onclick="side_slide(1)">
-    <span class="fas fa-angle-right"></span>
-  </div>
-</div>
 
-<script>
-  var indexValue = 1;
-  showImg(indexValue);
-  function btm_slide(e){showImg(indexValue = e);}
-  function side_slide(e){showImg(indexValue += e);}
-  function showImg(e){
-    var i;
-    const img = document.querySelectorAll('#img');
-    const slider = document.querySelectorAll('.btm-slides span');
-    if(e > img.length){indexValue = 1}
-    if(e < 1){indexValue = img.length}
-    for(i = 0; i < img.length; i++){
-      img[i].style.display = "none";
-    }
-    for(i = 0; i < slider.length; i++){
-      slider[i].style.background = "rgba(255,255,255,0.1)";
-    }
-    img[indexValue-1].style.display = "block";
-    slider[indexValue-1].style.background = "white";
-  }
-</script>
+
 
 <div class="about-section" id="about-section">
   <div class="inner-container">
@@ -135,8 +115,14 @@
       </div>
   </div>
 </div>
+ 
 
 
+
+
+  </div>
+
+<script src="script.js"></script>
 
   </body>
 </html>
