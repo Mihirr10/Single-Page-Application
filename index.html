@@ -1,145 +1,139 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
-  <head>
-    <meta charset="utf-8">
-    <title>Single Page Application</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" />
 
-  </head>
-  <body>
-    <nav>
-      <input type="checkbox" id="check">
-      <label for="check" class="checkbtn">
-        <i class="fas fa-bars"></i>
-      </label>
-      <label class="logo">Single Page Application</label>
-      <ul>
-        <li><a  href="#home">Home</a></li>
-        <li><a  href="#images">Images</a></li>
-        <li><a  href="#container">Services</a></li>
-        <li><a  href="#about-section">About Us</a></li> 
-      
-      </ul>
-    </nav>
-    <section id="home"> 
-      <span class="element"></span></section>
+<head>
+  <meta charset="utf-8">
+  <title>Single Page Application</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" />
 
-    <div class="slider-container" id="images">
-      
-      <h1 style="text-align: center;">Image Slider</h1>
-      <div class="slide">
-          <img src="./image/1.jpeg">
-      </div>
-      <div class="slide">
-          <img src="./image/2.avif">
-      </div>
-      <div class="slide">
-          <img src="./image/3.avif">
-      </div>
-      
-      <span class="arrow prev" onclick="controller(-1)">&#10094;</span>
-      <span class="arrow next" onclick="controller(1)">&#10095;</span>
+</head>
+
+<body>
+  <nav>
+    <input type="checkbox" id="check">
+    <label for="check" class="checkbtn">
+      <i class="fas fa-bars"></i>
+    </label>
+    <label class="logo">Single Page Application</label>
+    <ul>
+      <li><a href="#home">Home</a></li>
+      <li><a href="#images">Images</a></li>
+      <li><a href="#container">Services</a></li>
+      <li><a href="#about-section">About Us</a></li>
+
+    </ul>
+  </nav>
+  <section id="home">
+    <span class="element"></span>
+  </section>
+
+  <div class="slider-container" id="images">
+
+    <h1 style="text-align: center;">Image Slider</h1>
+    <div class="slide">
+      <img src="./image/1.jpeg">
     </div>
-  
-    
-<div class="container" id="container">
+    <div class="slide">
+      <img src="./image/2.avif">
+    </div>
+    <div class="slide">
+      <img src="./image/3.avif">
+    </div>
 
-  <h1 class="heading" style="padding-top: 80px;">our services</h1>
-
-  <div class="box-container">
-    
-      <div class="box">
-          <img src="image/icon-1.png" alt="">
-          <h3>HTML 5</h3>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus, commodi?</p>
-          <a href="#" class="btn">read more</a>
-      </div>
-
-      <div class="box">
-          <img src="image/icon-2.png" alt="">
-          <h3>CSS 3</h3>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus, commodi?</p>
-          <a href="#" class="btn">read more</a>
-      </div>
-
-      <div class="box">
-          <img src="image/icon-3.png" alt="">
-          <h3>JavaScript</h3>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus, commodi?</p>
-          <a href="#" class="btn">read more</a>
-      </div>
-
-      <div class="box">
-          <img src="image/icon-4.png" alt="">
-          <h3>SASS</h3>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus, commodi?</p>
-          <a href="#" class="btn">read more</a>
-      </div>
-
-      <div class="box">
-          <img src="image/icon-5.png" alt="">
-          <h3>JQuery</h3>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus, commodi?</p>
-          <a href="#" class="btn">read more</a>
-      </div>
-
-      <div class="box">
-          <img src="image/icon-6.png" alt="">
-          <h3>React.js</h3>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus, commodi?</p>
-          <a href="#" class="btn">read more</a>
-      </div>
-
+    <span class="arrow prev" onclick="controller(-1)">&#10094;</span>
+    <span class="arrow next" onclick="controller(1)">&#10095;</span>
   </div>
-<br>
-<br>
-</div>
+
+
+  <div class="container" id="container">
+
+    <h1 class="heading" style="padding-top: 80px;">our services</h1>
+
+    <div class="box-container">
+
+      <div class="box">
+        <img src="image/icon-1.png" alt="">
+        <h3>HTML 5</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus, commodi?</p>
+        <a href="https://www.w3schools.com/html/" class="btn" target="_self">read more</a>
+      </div>
+
+      <div class="box">
+        <img src="image/icon-2.png" alt="">
+        <h3>CSS 3</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus, commodi?</p>
+        <a href="https://www.w3schools.com/css/default.asp" class="btn" target="_self">read more</a>
+      </div>
+
+      <div class="box">
+        <img src="image/icon-3.png" alt="">
+        <h3>JavaScript</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus, commodi?</p>
+        <a href="https://www.w3schools.com/js/default.asp" class="btn" target="_self">read more</a>
+      </div>
+
+      <div class="box">
+        <img src="image/icon-4.png" alt="">
+        <h3>SASS</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus, commodi?</p>
+        <a href="#" class="btn">read more</a>
+      </div>
+
+      <div class="box">
+        <img src="image/icon-5.png" alt="">
+        <h3>JQuery</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus, commodi?</p>
+        <a href="#" class="btn">read more</a>
+      </div>
+
+      <div class="box">
+        <img src="image/icon-6.png" alt="">
+        <h3>React.js</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus, commodi?</p>
+        <a href="#" class="btn">read more</a>
+      </div>
+
+    </div>
+    <br>
+    <br>
+  </div>
 
 
 
 
-<div class="about-section" id="about-section">
-  <div class="inner-container" id="about-section1">
+  <div class="about-section" id="about-section">
+    <div class="inner-container" id="about-section1">
       <h1>About Us</h1>
       <p class="text">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus velit ducimus, enim inventore earum, eligendi nostrum pariatur necessitatibus eius dicta a voluptates sit deleniti autem error eos totam nisi neque voluptates sit deleniti autem error eos totam nisi neque.
-      </p>
+        We help you to identify and solve critical business challenges with proven technology practices such as DevOps,
+        cloud-native development, and quality engineering services. Our remote agile teams of engineers immerse
+        themselves in your project, maintaining your company culture and working in line with your strategic goals.
       <div class="skills">
-          <span>Web Design</span>
-          <span>Photoshop & Illustrator</span>
-          <span>Coding</span>
+        <span>Web Design</span>
+        <span>Photoshop & Illustrator</span>
+        <span>Coding</span>
       </div>
+    </div>
+
+
+
+
+
+
+
   </div>
 
-
-
-  <div class="inner-container" id="about-section2">
-      <h1>About Us</h1>
-      <p class="text">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus velit ducimus, enim inventore earum, eligendi nostrum pariatur necessitatibus eius dicta a voluptates sit deleniti autem error eos totam nisi neque voluptates sit deleniti autem error eos totam nisi neque.
-      </p>
-      <div class="skills">
-          <span>Web Design</span>
-          <span>Photoshop & Illustrator</span>
-          <span>Coding</span>
-      </div>
-  </div>
-
-
-
-  
-</div>
- 
 
 
 
 
   </div>
   <script src="https://unpkg.com/typed.js@2.0.132/dist/typed.umd.js"></script>
-<script src="script.js"></script>
+  <script src="script.js"></script>
 
-  </body>
+</body>
+
 </html>
