@@ -12,8 +12,8 @@ function slideshow(num) {
         flag = 0;
     }
     if (num < 0) { 
-        num = 3;
-        flag = 3;
+        num = 2;
+        flag = 2;
     }
 
     slides[num].style.display = "block";
