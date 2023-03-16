@@ -99,7 +99,7 @@ a.active,a:hover{
   }
 }
 section{
-  background: url(laptop.jpg) no-repeat;
+  background: url(./image/laptop.jpg) no-repeat;
   background-size: cover;
   height: calc(108vh - 50px);
   
