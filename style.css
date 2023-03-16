@@ -10,7 +10,7 @@ body{
   font-family: montserrat;
 }
 nav{
-  background: skyblue;
+  background: lightcoral;
   height: 80px;
   width: 100%;
   position: fixed;
@@ -31,6 +31,7 @@ nav ul{
 nav ul li{
   display: inline-block;
   line-height: 80px;
+  font-weight: bold;
   margin: 0 5px;
 }
 nav ul li a{
@@ -41,7 +42,7 @@ nav ul li a{
   text-transform: uppercase;
 }
 a.active,a:hover{
-  background: #1b9bff;
+  background: gold;
   transition: .5s;
 }
 .checkbtn{
@@ -84,8 +85,10 @@ a.active,a:hover{
     margin: 50px 0;
     line-height: 30px;
   }
+ 
   nav ul li a{
     font-size: 20px;
+
   }
   a:hover,a.active{
     background: none;
@@ -96,9 +99,10 @@ a.active,a:hover{
   }
 }
 section{
-  background: url(bg1.jpg) no-repeat;
+  background: url(laptop.jpg) no-repeat;
   background-size: cover;
-  height: calc(100vh - 80px);
+  height: calc(108vh - 50px);
+  
 }
 
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap');
@@ -114,15 +118,16 @@ section{
 }
 
 .container{
-    background:skyblue;
+    background:white;
     padding:20px 20%;
     padding-bottom: 100px;
+    box-shadow: #888888;
 }
 
 .container .heading{
     text-align: center;
     padding-bottom: 15px;
-    color:#fff;
+    color:black;
     text-shadow: 0 5px 10px rgba(0,0,0,.2);
     font-size: 50px;
 }
@@ -192,16 +197,22 @@ section{
   display: flex;
   justify-content:center;
   height: 100vh;
+
 }
 
 .inner-container{
   width: 70%;
-  background-color: skyblue ;
+  background-color: lightcoral ;
   padding: 100px;
   padding-top: 100px;
   box-shadow: -5px 5px  10px #888888;
   height: 50vh;
  
+}
+
+.inner-container:hover{
+  box-shadow: 0 10px 15px rgba(0,0,0,.3);
+  transform: scale(1.03);
 }
 
 .inner-container h1{
@@ -257,12 +268,12 @@ section{
 
 .slider-container{
    position: relative;
-   background: skyblue;
+   background: white;
  
 }
 
 .slider-container h1{
-  color: white;
+  color: black;
   margin-bottom: 50px;
   padding-top: 80px;
 }
@@ -293,3 +304,19 @@ section{
 .next{
   right: 15%;
 }
+
+#about-section1{
+   
+   width: 40%;
+   
+}
+
+#about-section2{
+ 
+  width: 40%;
+  margin-left: 10px;
+  
+}
+
+
+

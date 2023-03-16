@@ -11,7 +11,7 @@ function slideshow(num) {
         num = 0;
         flag = 0;
     }
-    if (num < 0) {
+    if (num < 0) { 
         num = 3;
         flag = 3;
     }
@@ -24,3 +24,5 @@ function controller(x) {
     flag = flag + x;
     slideshow(flag);
 }
+
+
