@@ -258,7 +258,7 @@ section{
 
 @media screen and (max-width:600px){
   .about-section{
-      padding: 0;
+      padding: 10;
   }
   .inner-container{
       padding: 60px;
@@ -307,15 +307,8 @@ section{
 
 #about-section1{
    
-   width: 40%;
+   width: 80%;
    
-}
-
-#about-section2{
- 
-  width: 40%;
-  margin-left: 10px;
-  
 }
 
 
