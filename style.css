@@ -237,6 +237,7 @@ section{
   justify-content: space-between;
   font-weight: 700;
   font-size: 13px;
+
 }
 
 @media screen and (max-width:1200px){
@@ -307,7 +308,8 @@ section{
 
 #about-section1{
    
-   width: 80%;
+   width: 85%;
+
    
 }
 
